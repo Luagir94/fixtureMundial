@@ -1,0 +1,57 @@
+$qatar: #5c0632;
+$grey: #747f8a;
+$white: #fafafa;
+$black: #212020;
+
+@mixin mq($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin font($size, $color, $weight) {
+  font-size: calc(10px + $size);
+  color: $color;
+  @if $weight != none {
+    font-weight: $weight;
+  }
+}
+@mixin button($type) {
+  @include size(120px, unset, unset, 48px, unset, unset);
+  border-radius: 5px;
+  cursor: pointer;
+  @if $type == primary {
+    background: $red;
+    color: $white;
+  } @else if $type == secondary {
+    background: $white;
+    color: $grey;
+    border: 1px solid $grey;
+  } @else if $type == tertiary {
+    background: none;
+    color: grey;
+    text-decoration: underline 2px $grey;
+  }
+}
+@mixin input() {
+  @include size(100%, 120px, 220px, 38px, none, none);
+  border-radius: 5px;
+  border: 2px solid $grey;
+  padding: 5px;
+}
+@mixin label {
+  color: $white;
+}
+
+@mixin centerFlexR() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@mixin centerFlexC() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,120 @@
+@import "../../styles/globals.scss";
+.card {
+  width: calc(250px + 15vw);
+  min-width: calc(250px + 2vw) ;
+
+  height: calc(120px + 5vw);
+  min-height: fit-content;
+  padding: 5px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 68px 1px rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0px 0px 68px 1px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0px 0px 68px 1px rgba(0, 0, 0, 0.3) inset;
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-content: stretch;
+}
+.countryContainer {
+  width: 40%;
+  display: flex;
+  &>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.country{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5vw;
+        @include font(.2vw, $black, 700);
+        text-transform: uppercase;
+      div{
+        height: fit-content;
+        img {
+            width: 3vw;
+            height: 3vw;
+            min-width: 50px ;
+            min-height: 50px;
+            object-fit: contain;
+          }
+      }
+    }
+    &.goals{
+        width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  
+div{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.059);
+    margin-bottom: 70%;
+    @include font(.8vw, $black, 700);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6) inset;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6) inset;
+}
+}
+  }
+
+ 
+}
+.extrasContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 30%;
+    div{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+    p{
+        @include font(.1vw, $black, none);
+        display: flex;
+        justify-content: center;
+      
+        align-items: baseline;
+        gap: 1px;
+        span{
+            @include font(.15vw, $black, 700); 
+            text-transform: uppercase;
+        }
+    }
+}
+.state{
+    @include font(-.2vw, $black, 700);
+    width: 20%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            margin-bottom: 50%;
+            width: 100%;
+            height: fit-content;
+            text-align: center;
+            background: $qatar;
+            box-shadow: 0px 0px 10px 1px $grey inset;
+            -webkit-box-shadow: 0px 0px 10px 1px $grey inset;
+            -moz-box-shadow: 0px 0px 10px 1px $grey inset;
+            padding: 5px;
+            border-radius: 1rem;
+            @include font(-1px, $white, 700); 
+        }
+}

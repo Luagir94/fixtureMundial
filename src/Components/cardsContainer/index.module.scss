@@ -1,0 +1,10 @@
+@import '../../styles/globals.scss';
+.container{
+    display: flex;
+    width: 100%;
+ flex-wrap: wrap;
+justify-content: center;
+gap: 2vw;
+padding: 2vw;
+
+}
