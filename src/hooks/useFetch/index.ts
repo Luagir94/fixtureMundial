@@ -17,7 +17,7 @@ const useFetch= (route: string, params? : string) : any => {
                         method: 'GET',
                         url: `${envs.apiUrl}${route}`,
                         headers:{
-                            "x-rapidapi-host": "v3.football.api-sports.io",
+                            "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
                             "x-rapidapi-key": `${envs.apiKey}`
                         }
                     })
