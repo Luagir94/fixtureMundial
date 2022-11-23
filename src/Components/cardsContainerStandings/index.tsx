@@ -15,7 +15,7 @@ import CardStanding from '../cardStanding'
     <h2 className={styles.h2}>Standings</h2>
     <div  className={styles.container}>
 
-     {!loading && response.response[0].league.standings.map( (x : any, i: any)  => <CardStanding key={`dsasdad${i}`} standings={x}/>)}
+     {!loading && response?.response[0]?.league?.standings.map( (x : any, i: any)  => <CardStanding key={`dsasdad${i}`} standings={x}/>)}
      
       </div>
     </>
