@@ -16,7 +16,7 @@ import CardStanding from '../../Components/cardStanding'
     <div  className={styles.container}>
 
      {!loading ? response?.response[0]?.league?.standings.map( (x : any, i: any)  => <CardStanding key={`dsasdad${i}`} standings={x}/>) 
-      : <div style={{width:'100%',height:'100vh'
+      : <div style={{width:'100%',height:'100vh',
       alignItems: 'center', justifyContent:'center',
       position:'relative', display : 'flex'}}
       
