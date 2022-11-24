@@ -38,7 +38,7 @@ const MatchStatistics = () => {
     <>
     
         <h2 className={styles.h2}>Statistics</h2>
-      {loading ? <div style={{width:'100%',height:'100vh',
+      {loading ? <div style={{width:'100%',height:'70vh',
       alignItems: 'center', justifyContent:'center',
       position:'relative', display : 'flex'}}
       
