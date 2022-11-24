@@ -1,0 +1,23 @@
+@import '../../styles/globals.scss';
+.container{
+    display: flex;
+    width: 100%;
+ flex-wrap: wrap;
+justify-content: center;
+gap: 3rem;
+padding: 0 2vw;
+background: black;
+padding-top: 3rem;
+}
+
+
+.h2{
+    font-size: calc(16px + 3vw);
+    padding-left: 4vw;
+    margin-top: 2rem;
+    color: $white;
+}
+.loader{
+    width: calc(300px + 20vw) !important;
+    height: calc(300px + 20vw) ;
+}

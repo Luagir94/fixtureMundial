@@ -5,12 +5,20 @@
  flex-wrap: wrap;
 justify-content: center;
 gap: 2vw;
-padding: 2vw;
-margin-top: 3vw;
+padding: 0 2vw;
+background: black;
 
 }
 
 .h2{
     font-size: calc(16px + 3vw);
     padding-left: 4vw;
+    color: $white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.loader{
+    width: calc(300px + 20vw) !important;
+    height: calc(300px + 20vw) ;
 }

@@ -4,14 +4,19 @@
     width: 100%;
  flex-wrap: wrap;
 justify-content: center;
-gap: 3rem;
-padding: 2vw;
+gap: 2vw;
+padding: 0 2vw;
+background: black;
 
-margin-top: 3vw;
 }
-
 
 .h2{
     font-size: calc(16px + 3vw);
     padding-left: 4vw;
+    color: $white;
+    margin: 2rem 0;
+}
+.loader{
+    width: calc(300px + 20vw) !important;
+    height: calc(300px + 20vw) ;
 }

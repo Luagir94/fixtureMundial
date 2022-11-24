@@ -1,15 +1,13 @@
 import Layout from "./Components/layout";
 import useFetch from "./hooks/useFetch";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/app.scss'
-import CardsContainer from "./Components/cardsContainer";
-import CardsContainerStandings from "./Components/cardsContainerStandings";
+
+import Routing from "./configs/routing";
 function App() {
 
   return (
-    <Layout>
-      <CardsContainerStandings/>
-     <CardsContainer/>
-    </Layout>
+    <Routing/>
   );
 }
 

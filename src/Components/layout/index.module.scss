@@ -1,11 +1,24 @@
 @import '../../styles/globals.scss';
 .header{
     background: $white;
-    height: calc(50px + 5vw);
+    height:fit-content;
     box-shadow: 0px -42px 61px -17px rgba(0,0,0,.3) inset;
     -webkit-box-shadow: 0px -42px 61px -17px rgba(0,0,0,.3) inset;
     -moz-box-shadow: 0px -42px 61px -17px rgba(0,0,0,.3) inset;
     img{
         width: calc(100px + 8vw); 
+    }
+}
+
+.link{
+    color: $qatar;
+    margin: 1rem 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease-in;
+    &:hover{
+        color: $qatar;
+        font-size: 1.1rem;
     }
 }

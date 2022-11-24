@@ -17,11 +17,11 @@ $black: #212020;
   }
 }
 @mixin button($type) {
-  @include size(120px, unset, unset, 48px, unset, unset);
+
   border-radius: 5px;
   cursor: pointer;
   @if $type == primary {
-    background: $red;
+    background: $qatar;
     color: $white;
   } @else if $type == secondary {
     background: $white;

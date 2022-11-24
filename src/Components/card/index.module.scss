@@ -2,10 +2,11 @@
 .card {
   width: calc(250px + 15vw);
   min-width: calc(250px + 2vw) ;
-
-  height: calc(120px + 5vw);
+cursor: pointer;
+  height: fit-content;
   min-height: fit-content;
   padding: 5px;
+  background: $white;
   border-radius: 1rem;
   box-shadow: 0px 0px 68px 1px rgba(0, 0, 0, 0.3) inset;
   -webkit-box-shadow: 0px 0px 68px 1px rgba(0, 0, 0, 0.3) inset;
@@ -55,8 +56,8 @@
   justify-content: flex-end;
   
 div{
-    width: 100%;
-    height: 35%;
+    width: calc(2rem + 1vw);
+    height: calc(2rem + 1vw);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +65,7 @@ div{
     background: white;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.059);
-    margin-bottom: 70%;
+    
     @include font(.8vw, $black, 700);
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6) inset;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6) inset;
@@ -79,9 +80,11 @@ div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 30%;
+    align-items: baseline;
+    height: fit-content;
+    margin-top: 1rem;
     div{
-        width: 100%;
+        width: 50%;
         text-align: center;
         margin-bottom: 1px;
     }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './index.module.scss'
 import dayjs from 'dayjs'
-
+import { useNavigate } from "react-router-dom";
 const stateMatch = (): string => {
    const day = dayjs("2022-11-20T16:00:00+00:00").format('DD/MM/YYYY')
    console.log(day);
@@ -12,41 +12,9 @@ const stateMatch = (): string => {
 
 
 const Card = (props: any) => {
-    // return <div className={styles.card}>
-    //     <div>
-    //         <div>
-    //             <div>
-    //                 {props?.teams?.home?.name}
-    //                 <img src={props?.teams?.home?.logo} alt="" />
-    //             </div>
-    //             <div>
-    //                 <div>
-    //                     {props?.goals?.home}
-    //                 </div>
-    //             </div>
-    //         </div>
-    //         <div>
-    //             <div>
-    //             </div>
-    //         </div>
-    //         <div>
-    //             <div>
-    //                 <div>
-    //                     {props?.goals?.away}
-    //                 </div>
-    //             </div>
-    //             <div>
-    //                 {props?.teams?.away?.name}
-    //                 <img src={props?.teams?.away?.logo} alt="" />
-    //             </div>
+   const navigate = useNavigate()
 
-    //         </div>
-    //     </div>
-    //     <div>
-    //     </div>
-    // </div>
-
-    return <div className={styles.card}>
+    return <div className={styles.card} onClick={() => navigate(`/statistics/${props?.fixture?.id}/${props?.teams?.home?.id}/${props?.teams?.away?.id}`)}>
         <div className={styles.mainContainer}>
             <div  className={styles.countryContainer}>
                 <div  className={styles.country}>
