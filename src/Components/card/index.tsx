@@ -14,7 +14,7 @@ const stateMatch = (): string => {
 const Card = (props: any) => {
    const navigate = useNavigate()
 
-    return <div className={styles.card} onClick={() => navigate(`/statistics/${props?.fixture?.id}/${props?.teams?.home?.id}/${props?.teams?.away?.id}`)}>
+    return <div className={styles.card} onClick={() => props?.fixture?.status?.elapsed === 90 && navigate(`/statistics/${props?.fixture?.id}/${props?.teams?.home?.id}/${props?.teams?.away?.id}`)}>
         <div className={styles.mainContainer}>
             <div  className={styles.countryContainer}>
                 <div  className={styles.country}>
