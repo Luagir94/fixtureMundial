@@ -17,7 +17,7 @@ const useFetch= (route: string, params? : string) : any => {
                         method: 'GET',
                         url: `${envs.apiUrl}${route}`,
                         headers:{
-                            "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
+                            "X-RapidAPI-Host": "v3.football.api-sports.io",
                             "X-RapidAPI-Key": `${envs.apiKey}`
                         }
                     })
@@ -33,7 +33,7 @@ const useFetch= (route: string, params? : string) : any => {
                         method: 'GET',
                         url: `${envs.apiUrl}${route}?${params}`,
                         headers:{
-                            "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
+                            "X-RapidAPI-Host": "v3.football.api-sports.io",
                             "X-RapidAPI-Key": `${envs.apiKey}`
                         }
                     })

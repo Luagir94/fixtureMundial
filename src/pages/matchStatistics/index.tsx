@@ -45,7 +45,7 @@ const MatchStatistics = () => {
       ><img src='/assets/loader.gif'className={styles.loader}/></div> : <div className={styles.container2}>
         {teams.map((x: any) => <div className={styles.team}>
           <div>{x?.team?.name} <img src={x?.team?.logo} alt="" /></div>
-          {x?.statistics.map((y: any) => <div> <span>{y?.type}:</span>{y?.value || 0}</div>)}
+          {x?.statistics.map((y: any) => <div key={x?.team?.name + y?.type}> <span>{y?.type}:</span>{y?.value || 0}</div>)}
         </div>)}
       </div>
 

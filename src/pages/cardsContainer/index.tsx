@@ -8,7 +8,7 @@ import useFetch from '../../hooks/useFetch'
     <h2 className={styles.h2}>Matches</h2>
     <div  className={styles.container}>
    
-     {!loading ? response?.response.sort((b : any, a:any) => new Date(b.fixture.date).valueOf() - new Date(a.fixture.date).valueOf()).map( (x : any)  => <Card key={x.fixture?.id} {...x}/>)
+     {!loading ? response?.response?.sort((b : any, a:any) => new Date(b.fixture.date).valueOf() - new Date(a.fixture.date).valueOf()).map( (x : any)  => <Card key={x.fixture?.id} {...x}/>)
      : <div style={{width:'100%',height:'70vh',
      alignItems: 'center', justifyContent:'center',
      position:'relative', display : 'flex'}}
