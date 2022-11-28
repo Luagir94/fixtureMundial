@@ -33,7 +33,6 @@ const MatchStatistics = () => {
     (fixture && id1 && id2) && getStatic()
   }, [fixture, id1, id2])
 
-
   return (
     <>
     
