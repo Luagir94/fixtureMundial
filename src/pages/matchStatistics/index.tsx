@@ -21,7 +21,7 @@ const MatchStatistics = () => {
         method: 'GET',
         url: `${envs.apiUrl}${url}`,
         headers: {
-          "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
+          "X-RapidAPI-Host": "v3.football.api-sports.io",
           "X-RapidAPI-Key": `${envs.apiKey}`
         }
       }).then(resp => resp.data.response[0]))).then(res => {

@@ -9,7 +9,7 @@ import CardStanding from '../../Components/cardStanding'
       
       useEffect(() => {
      console.log(response.response);
-     
+    
       }, [response])
     return <>
     <h2 className={styles.h2}>Standings</h2>
